@@ -43,7 +43,8 @@ services:
       - N8N_HOST=${SUBDOMAIN}.${DOMAIN_NAME}
       - N8N_PORT=5678
       - N8N_PROTOCOL=https
-      - N8N_TRUST_PROXY=true
+      - N8N_TRUST_PROXY='127.0.0.1'
+      - N8N_RATE_LIMIT_ENABLED=false # This was also ignored
       - NODE_ENV=production
       - N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true
       - N8N_RUNNERS_ENABLED=true
